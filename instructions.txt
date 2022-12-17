@@ -3,3 +3,5 @@ tsc --init -> tsconfig.json
 
 yarn add ts-node-dev -D 
     Auxilia rodar nosso serviço (transforma ts para js para rodar)
+
+Construtor é como se fosse um método que é chamado quando a classe é instânciada
