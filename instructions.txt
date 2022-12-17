@@ -1,0 +1,5 @@
+npm install -g typescript
+tsc --init -> tsconfig.json
+
+yarn add ts-node-dev -D 
+    Auxilia rodar nosso serviço (transforma ts para js para rodar)
