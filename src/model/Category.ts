@@ -1,6 +1,5 @@
 import { v4 as uuidV4, v1 as uuidV1 } from 'uuid';
 
-
 class Category {
 
     id?: string;
@@ -8,6 +7,7 @@ class Category {
     description: string;
     created_at: Date;
 
+    // check if id exists
     constructor() {
         if(!this.id) {
             this.id = uuidV4()
