@@ -8,19 +8,21 @@ interface IRequest {
 }
 
 class CreateCategoryService {
+
+    constructor(private categoriesRepository: CategoriesRepository) {}
+        
     // destructuring assignment
     execute ({ name, description }: IRequest) {
-    const categoriesRepository = new CategoriesRepository();
     
-    // check if category already exists
-    const categoryAlreadyExists = categoriesRepository.findByName(name);
-    // if default true
-    if (categoryAlreadyExists) {
-        throw new Error("Category Already exists! Try with another name of category")
-    }
+        // check if category already exists
+        const categoryAlreadyExists = this.categoriesRepository.findByName(name);
+        // if default true
+        if (categoryAlreadyExists) {
+            throw new Error("Category Already exists! Try with another name of category")
+        }
 
-    categoriesRepository.create({name, description})
-    }
+        this.categoriesRepository.create({name, description})
+        }
 }
 
 export { CreateCategoryService }
