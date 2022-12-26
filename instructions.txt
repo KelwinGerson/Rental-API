@@ -16,3 +16,6 @@ Conceito de código limpo.
 L => LSP - Liskov Substituion Principle
     Substituion without impact of system 
 
+-------------------
+
+The software should know only of abstractions, not implementation
