@@ -12,3 +12,7 @@ Construtor é como se fosse um método que é chamado quando a classe é instân
 
 Conceito de código limpo.
     Nomes declarativos/descritivos
+
+L => LSP - Liskov Substituion Principle
+    Substituion without impact of system 
+

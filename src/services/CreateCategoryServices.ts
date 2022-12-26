@@ -1,4 +1,4 @@
-import { CategoriesRepository } from "../repositories/CategoriesRepository";
+import { ICategoriesRepository } from "../repositories/ICategoriesRepository";
 
 
 // interface with informations which i need without a service know a request/response
@@ -9,7 +9,7 @@ interface IRequest {
 
 class CreateCategoryService {
 
-    constructor(private categoriesRepository: CategoriesRepository) {}
+    constructor(private categoriesRepository: ICategoriesRepository) {}
         
     // destructuring assignment
     execute ({ name, description }: IRequest) {
