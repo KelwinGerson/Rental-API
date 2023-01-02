@@ -1,4 +1,4 @@
-import { ICategoriesRepository } from "../repositories/ICategoriesRepository";
+import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
 
 
 // interface with informations which i need without a service know a request/response
@@ -7,7 +7,7 @@ interface IRequest {
     description: string;
 }
 
-class CreateCategoryService {
+class CreateCategoryUseCase {
 
     constructor(private categoriesRepository: ICategoriesRepository) {}
         
@@ -25,4 +25,4 @@ class CreateCategoryService {
         }
 }
 
-export { CreateCategoryService }
+export { CreateCategoryUseCase }
