@@ -18,4 +18,4 @@ L => LSP - Liskov Substituion Principle
 
 -------------------
 
-The software should know only of abstractions, not implementation
+The software should know only of abstractions, not implementation.
